@@ -44,6 +44,11 @@ body {
   color: #102746;
 }
 
+img {
+  min-width: 100%;
+  height: auto;
+}
+
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
@@ -97,7 +102,7 @@ header {
 /*Intro Style Start*/
 
 .intro {
-  min-height: 100vh;
+  min-height: 962px;
   background: url(../img/intro_bg) no-repeat center;
   background-size: cover;
   padding-top: 263px;
@@ -162,3 +167,82 @@ header {
   background: #094da5;
 }
 /*Intro Style End*/
+
+/* Benefits style start */
+
+.benefits {
+  margin-bottom: 131px;
+}
+
+.benefits_wrap {
+  max-width: 1262px;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px 0px #15182429;
+  position: relative;
+}
+
+.benefits_title {
+  width: 100%;
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 500;
+  padding: 93px 100px 88px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: #fff;
+}
+
+.benefits_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 55px;
+  padding: 0 100px;
+}
+
+.benefits_card {
+  grid-column: span 1;
+  margin-bottom: 112px;
+}
+
+.benefit_card_pic {
+  max-width: 66px;
+  margin-bottom: 37px;
+}
+
+.benefit_card_thumb {
+  display: block;
+}
+
+.benefits_card_title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+.benefits_card_text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 39px;
+}
+
+.benefits_card_more {
+  display: inline-block;
+  padding-right: 59px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  text-decoration: none;
+  background: url(../img/svg/jet-icon.svg) no-repeat 95% center;
+  transition: 0.2s all;
+}
+
+.benefits_card_more:hover,
+.benefits_card_more:visited {
+  background: url(../img/svg/jet-icon.svg) no-repeat right center;
+}
+
+/* Benefits style end */
