@@ -126,7 +126,7 @@ header {
 /*Intro Style Start*/
 
 .intro {
-  min-height: 962px;
+  min-height: 961px;
   background: url(../img/intro_bg) no-repeat center;
   background-size: cover;
   padding-top: 263px;
@@ -415,3 +415,31 @@ header {
 }
 
 /* Places style end */
+
+/* Top places style start */
+.top {
+  margin-bottom: 86px;
+}
+
+.top_title {
+  margin-bottom: 54px;
+}
+
+.top_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.top_card_pic {
+  position: relative;
+}
+
+.top_card_stats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(21, 24, 36, 0.6);
+}
+
+/* Top places style end */
