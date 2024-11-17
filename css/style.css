@@ -543,4 +543,52 @@ header {
 /* Videos style end */
 
 /* Footer style start */
+.footer {
+  background-color: #0e1d28;
+  padding: 119px 0px;
+}
+
+.footer_logo_pic {
+  width: 170px;
+  height: 64px;
+  padding-right: 22rem;
+}
+
+.footer_item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_logo {
+  width: 50%;
+}
+
+.footer_nav {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer_menu_title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.footer_menu_link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_menu_link:hover,
+.footer_menu_link:focus,
+.footer_menu_link:active {
+  opacity: 0.75;
+}
+
 /* Footer style end */
