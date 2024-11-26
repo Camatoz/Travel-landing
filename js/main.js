@@ -13,13 +13,13 @@
 
 (function () {
   const burgerItem = document.querySelector(".burger");
-  const menu = document.querySelector(".header-nav");
+  const menu = document.querySelector(".header_nav");
   const menuClose = document.querySelector(".header_nav_close");
   burgerItem.addEventListener("click", () => {
-    menu.classList.add("header-nav_active");
+    menu.classList.add("header_nav_active");
     // console.log("9");
   });
   menuClose.addEventListener("click", () => {
-    menu.classList.remove("header-nav_active");
+    menu.classList.remove("header_nav_active");
   });
 })();
