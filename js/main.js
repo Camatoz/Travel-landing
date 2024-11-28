@@ -27,8 +27,10 @@
 // Scroll to anchors
 (function () {
   const smoothScroll = function (targetEl, duration) {
+    //Если header не скролится удалить const headerElHeight
     const headerElHeight = document.querySelector(".header").clientHeight;
     let target = document.querySelector(targetEl);
+    //Если header не скролится удалить headerElHeight
     let targetPosition = target.getBoundingClientRect().top - headerElHeight;
     let startPosition = window.pageYOffset;
     let startTime = null;
