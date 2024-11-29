@@ -15,6 +15,7 @@
   const burgerItem = document.querySelector(".burger");
   const menu = document.querySelector(".header_nav");
   const menuClose = document.querySelector(".header_nav_close");
+  const menuLinks = document.querySelectorAll(".header_item_link");
   burgerItem.addEventListener("click", () => {
     menu.classList.add("header_nav_active");
     // console.log("9");
@@ -22,6 +23,13 @@
   menuClose.addEventListener("click", () => {
     menu.classList.remove("header_nav_active");
   });
+  if (window.innerWidth < 768) {
+    for (let i = 0; i < menuLinks.length; i += 1) {
+      menuLinks[i].addEventListener("click", () => {
+        menu.classList.remove("header_nav_active");
+      });
+    }
+  }
 })();
 
 // Scroll to anchors
